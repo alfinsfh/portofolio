@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
@@ -61,12 +63,12 @@
     <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
   </header>
 
-  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online
   <div class="themeClrSelector">
     <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
     <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
       class="themeClrSelector__img" />
-  </div>
+  </div>-->
   <!---->
 
 
@@ -89,7 +91,7 @@
   </section>
   <section id="about" class="about main-section">
     <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
+      <h2 class="heading-secondary projects__heading-secondary" data-aos="fade-right">
         <span class="heading-secondary__sm"> About 🦄</span>
         <span class="heading-secondary__main">
           Here you will find more information about me, what I do, and list of my current skills in programming
@@ -97,10 +99,10 @@
       <div class="main-section__content">
         <div class="about__info">
           <div class="about__main-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
+            <h3 class="heading-quaternary about__heading-quaternary" data-aos="fade-up">
               My Story
             </h3>
-            <p class="text-primary about__text-primary">
+            <p class="text-primary about__text-primary" data-aos="fade-up">
               <span>
                 I am a web developer and app designer with a special interest in creating intuitive and user-friendly applications. I am also fascinated by web design and logo design.
               </span>
@@ -111,10 +113,10 @@
             <button class="btn btn-theme about__btn-theme">Projects</button>
           </div>
           <div class="about__skill-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
+            <h3 class="heading-quaternary about__heading-quaternary" data-aos="fade-up">
               My Skills
             </h3>
-            <ul class="about__skills">
+            <ul class="about__skills" data-aos="fade-up">
               <li class="about__skill">html</li>
               <li class="about__skill">css</li>
               <li class="about__skill">javascript</li>
@@ -126,7 +128,7 @@
       </div>
     </div>
   </section>
-  <section class="skills-showcase">
+  <section class="skills-showcase" data-aos="fade-up">
     <ul class="skills-showcase__list">
       <li class="skills-showcase__list-item">
         <i class="devicon-html5-plain"></i>
@@ -147,13 +149,13 @@
   </section>
   
   <section class="serti main-container">
-    <h2 class="heading-secondary projects__heading-secondary">
+    <h2 class="heading-secondary projects__heading-secondary" data-aos="fade-right">
         <span class="heading-secondary__sm"> Sertificate 🛠️</span>
         <span class="heading-secondary__main">
          Sertificate
         </span>
       </h2>
-<div class="container">
+<div class="container" data-aos="fade-up">
   <div class="card">
     <img src="https://profile-assets.showwcase.com/33235/1683945042497-RBZICQT%2520-%2520Belajar%2520Dasar-dasar%2520HTML%2520dan%252.jpg" alt="Sertifikat">
     <div>
@@ -186,13 +188,13 @@
 </section>
   <section id="projects" class="projects main-section">
     <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
+      <h2 class="heading-secondary projects__heading-secondary" data-aos="fade-right">
         <span class="heading-secondary__sm"> Projects 🛠️</span>
         <span class="heading-secondary__main">
           Here you will find some of the personal and clients projects that I created with the project details
         </span>
       </h2>
-      <div class="main-section__content">
+      <div class="main-section__content" data-aos="fade-up">
         <div class="projects__list">
           <div class="projects__list-item">
             <div class="projects__list-item-count">
@@ -308,7 +310,7 @@
       </div>
     </div>
   </section>
-  <footer class="main-footer">
+  <footer class="main-footer" data-aos="fade-up">
     <div class="main-footer__upper">
       <div class="main-container">
         <ul class="main-footer__links">
@@ -361,6 +363,9 @@
     </div>
   </footer>
   <script src="./script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
