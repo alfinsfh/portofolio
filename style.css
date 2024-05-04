@@ -11,9 +11,8 @@
   /* Theme Color in (R,G,B) format */
 }
 
+.serti {}
 
-.serti {
-}
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,17 +21,18 @@
   margin-top: 50px;
 }
 
-  @media screen and (min-width: 768px) {
-    .container {
-      grid-template-columns: 1fr 1fr;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  @media screen and (min-width: 1024px) {
-    .container {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
 .card {
   background-color: #000;
   color: #fff;
@@ -42,6 +42,7 @@
   flex-direction: column;
   width: 100%;
 }
+
 .card img {
   max-width: 100%;
   width: 100%;
@@ -49,6 +50,7 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
 .title {
   font-size: 20px;
   margin-top: 10px;
@@ -56,6 +58,7 @@
   font-family: Poppins;
   font-weight: 300;
 }
+
 .button {
   margin-top: 20px;
   align-self: center;
@@ -66,14 +69,17 @@
   font-size: 15px;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid transparent; /* Atur border bawah ke transparan untuk memastikan ruang tersedia untuk animasi */
-  transition: border-color 0.3s ease-in-out; /* Transisi warna border */
+  border-bottom: 1px solid transparent;
+  /* Atur border bawah ke transparan untuk memastikan ruang tersedia untuk animasi */
+  transition: border-color 0.3s ease-in-out;
+  /* Transisi warna border */
   transition: color 0.3s ease-in-out;
 }
 
 
 .button:hover {
-  border-color: #ffffff; /* Ubah warna border ketika dihover */
+  border-color: #ffffff;
+  /* Ubah warna border ketika dihover */
   color: #fff;
 }
 
@@ -85,14 +91,16 @@
   width: 0;
   height: 1px;
   background-color: #7f7f7f;
-  transition: width 0.3s ease-in-out; /* Transisi lebar */
-  border-radius: 5px; /* Membuat ujung border menjadi rounded */
+  transition: width 0.3s ease-in-out;
+  /* Transisi lebar */
+  border-radius: 5px;
+  /* Membuat ujung border menjadi rounded */
 }
 
 .button:hover::after {
-  width: 100%; /* Memperluas lebar dari 0 ke 100% saat dihover */
+  width: 100%;
+  /* Memperluas lebar dari 0 ke 100% saat dihover */
 }
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -318,6 +326,8 @@ a {
   box-shadow: 0 10px 100px -5px rgba(11, 11, 11, 0.798);
   z-index: 1000;
   backdrop-filter: blur(80px);
+    background-color: #0b0b0b5f;
+    border-bottom: 0.1px solid #222;
     /* Efek blur */
 }
 
@@ -489,8 +499,24 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .heading-foto-container {
+    float: left;
+    margin-right: 5rem;
+    max-width: 300px;
+  }
+}
 /* Hero Section Stylings */
 
+.heading-foto-container {
+  border-radius: 100px;
+  margin-bottom: 5rem;
+}
+
+.heading-foto-container img {
+  width: 100%;
+  border-radius: 100%;
+}
 .home-hero {
   display: flex;
   margin-top: 20rem;
@@ -505,6 +531,19 @@ a {
   animation: downToUp 0.8s;
 }
 
+.tompel {
+  box-shadow: 0 10px 100px -5px rgba(11, 11, 11, 0.798);
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  background-color: rgba(170, 170, 170, 0.248);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -200px;
+  border: 1px solid #525252;
+}
 @media (max-width: 37.5em) {
   .home-hero {
     height: unset;
@@ -604,7 +643,7 @@ background-color: #000;
 .skills-showcase {
   padding: 5rem 3rem;
   margin-top: -10rem;
-  margin-bottom: 10rem;
+    margin-bottom: 10rem;
 }
 
 .skills-showcase__list {
